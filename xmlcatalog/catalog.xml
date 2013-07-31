@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+  <nextCatalog catalog="../lib/xmlcatalog/catalog.xml"/>
+  <nextCatalog catalog="../docx_modify/xmlcatalog/catalog.xml"/>
+  <nextCatalog catalog="../docx2hub/xmlcatalog/catalog.xml"/>
+  <nextCatalog catalog="../xproc-util/store-debug/xmlcatalog/catalog.xml"/>
+  <nextCatalog catalog="../xproc-util/xml-model/xmlcatalog/catalog.xml"/>
+  <nextCatalog catalog="../xproc-util/xslt-mode/xmlcatalog/catalog.xml"/>
+  <nextCatalog catalog="../xslt-util/colors/catalog.xml"/>
+  <nextCatalog catalog="../xslt-util/hex/catalog.xml"/>
+  <nextCatalog catalog="../xslt-util/functx/xmlcatalog/catalog.xml"/>
+  
+</catalog>
