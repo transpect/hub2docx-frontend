@@ -25,6 +25,12 @@ if [ -z $DEBUG ]; then
     DEBUG=no
 fi
 
+if [ -z $DEBUG_DIR_URI ]; then
+    DEBUG_DIR_PARAM=""
+else
+    DEBUG_DIR_PARAM="debug-dir-uri=file:/$(cygpath -ma $DEBUG_DIR_URI)"
+fi
+
 if [ -z $HEAP ]; then
     HEAP=1024m
 fi
@@ -37,4 +43,4 @@ if $cygwin; then
   MODIFY_XPL=file:/$(cygpath -ma $MODIFY_XPL)
 fi
 
-$DIR/calabash/calabash.sh -i xslt="$XSL" -i xpl="$MODIFY_XPL" -i external-sources="$HUB" "$XPL" file="$DOCX_TEMPLATE" debug=$DEBUG
+$DIR/calabash/calabash.sh -i xslt="$XSL" -i xpl="$MODIFY_XPL" -i external-sources="$HUB" "$XPL" file="$DOCX_TEMPLATE" debug=$DEBUG $DEBUG_DIR_PARAM
