@@ -7,8 +7,9 @@
   <nextCatalog catalog="../xproc-util/store-debug/xmlcatalog/catalog.xml"/>
   <nextCatalog catalog="../xproc-util/xml-model/xmlcatalog/catalog.xml"/>
   <nextCatalog catalog="../xproc-util/xslt-mode/xmlcatalog/catalog.xml"/>
-  <nextCatalog catalog="../xslt-util/colors/catalog.xml"/>
-  <nextCatalog catalog="../xslt-util/hex/catalog.xml"/>
+  <nextCatalog catalog="../xslt-util/colors/xmlcatalog/catalog.xml"/>
+  <nextCatalog catalog="../xslt-util/hex/xmlcatalog/catalog.xml"/>
+  <nextCatalog catalog="../xslt-util/resolve-uri/xmlcatalog/catalog.xml"/>
   <nextCatalog catalog="../xslt-util/functx/xmlcatalog/catalog.xml"/>
   
 </catalog>
