@@ -28,7 +28,7 @@ fi
 if [ -z $DEBUG_DIR_URI ]; then
     DEBUG_DIR_PARAM=""
 else
-    DEBUG_DIR_PARAM="debug-dir-uri=file:/$(cygpath -ma $DEBUG_DIR_URI)"
+    DEBUG_DIR_PARAM="debug-dir-uri=$DEBUG_DIR_URI"
 fi
 
 if [ -z $HEAP ]; then
@@ -41,6 +41,7 @@ if $cygwin; then
   XPL=file:/$(cygpath -ma $XPL)
   XSL=file:/$(cygpath -ma $XSL)
   MODIFY_XPL=file:/$(cygpath -ma $MODIFY_XPL)
+  DEBUG_DIR_PARAM="debug-dir-uri=file:/$(cygpath -ma $DEBUG_DIR_URI)"
 fi
 
 $DIR/calabash/calabash.sh -i xslt="$XSL" -i xpl="$MODIFY_XPL" -i external-sources="$HUB" "$XPL" file="$DOCX_TEMPLATE" debug=$DEBUG $DEBUG_DIR_PARAM
