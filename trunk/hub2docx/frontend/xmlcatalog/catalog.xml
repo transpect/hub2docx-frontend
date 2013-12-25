@@ -10,6 +10,7 @@
   <nextCatalog catalog="../xslt-util/colors/xmlcatalog/catalog.xml"/>
   <nextCatalog catalog="../xslt-util/hex/xmlcatalog/catalog.xml"/>
   <nextCatalog catalog="../xslt-util/resolve-uri/xmlcatalog/catalog.xml"/>
+  <nextCatalog catalog="../xslt-util/lengths/xmlcatalog/catalog.xml"/>
   <nextCatalog catalog="../xslt-util/functx/xmlcatalog/catalog.xml"/>
   
 </catalog>
