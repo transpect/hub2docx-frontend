@@ -10,9 +10,10 @@ DOCX_TEMPLATE="$( readlink -f "$2" )"
 XPL=$DIR/docx_modify/xpl/docx_modify.xpl
 MODIFY_XPL=$DIR/lib/xpl/hub2docx.xpl
 XSL=$DIR/lib/xsl/hub2docx.xsl
+DEBUG_DIR_URI=debug
 
 if [ -z $HUB ]; then
-    echo "Usage: [DEBUG=yes|no] [HEAP=xxxxm] hub2docx.sh HUB DOCX_TEMPLATE";
+    echo "Usage: [DEBUG=yes|no] [HEAP=xxxxm] hub2docx.sh SOURCE_XML HUB DOCX_TEMPLATE";
     exit 1;
 fi
 
@@ -35,6 +36,7 @@ if [ -z $HEAP ]; then
     HEAP=1024m
 fi
 
+
 if $cygwin; then
   HUB=file:/$(cygpath -ma $HUB)
   DOCX_TEMPLATE=$(cygpath -ma $DOCX_TEMPLATE)
@@ -43,5 +45,12 @@ if $cygwin; then
   MODIFY_XPL=file:/$(cygpath -ma $MODIFY_XPL)
   DEBUG_DIR_PARAM="debug-dir-uri=file:/$(cygpath -ma $DEBUG_DIR_URI)"
 fi
+
+echo $HUB
+echo $DOCX_TEMPLATE
+echo $XPL
+echo $XSL
+
+
 
 $DIR/calabash/calabash.sh -i xslt="$XSL" -i xpl="$MODIFY_XPL" -i external-sources="$HUB" "$XPL" file="$DOCX_TEMPLATE" debug=$DEBUG $DEBUG_DIR_PARAM
