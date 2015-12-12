@@ -1,0 +1,3 @@
+[submodule "calabash-frontend"]
+	path = calabash-frontend
+	url = https://github.com/transpect/calabash-frontend.git
