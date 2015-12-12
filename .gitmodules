@@ -1,3 +1,18 @@
 [submodule "calabash-frontend"]
 	path = calabash-frontend
 	url = https://github.com/transpect/calabash-frontend.git
+[submodule "docx_modify-lib"]
+	path = docx_modify-lib
+	url = https://github.com/transpect/docx_modify-lib.git
+[submodule "docx2hub"]
+	path = docx2hub
+	url = https://github.com/transpect/docx2hub.git
+[submodule "hub2docx-lib"]
+	path = hub2docx-lib
+	url = https://github.com/transpect/hub2docx-lib.git
+[submodule "xproc-util"]
+	path = xproc-util
+	url = https://github.com/transpect/xproc-util.git
+[submodule "xslt-util"]
+	path = xslt-util
+	url = https://github.com/transpect/xslt-util.git
