@@ -4,13 +4,7 @@
   <nextCatalog catalog="../lib/xmlcatalog/catalog.xml"/>
   <nextCatalog catalog="../docx_modify/xmlcatalog/catalog.xml"/>
   <nextCatalog catalog="../docx2hub/xmlcatalog/catalog.xml"/>
-  <nextCatalog catalog="../xproc-util/store-debug/xmlcatalog/catalog.xml"/>
-  <nextCatalog catalog="../xproc-util/xml-model/xmlcatalog/catalog.xml"/>
-  <nextCatalog catalog="../xproc-util/xslt-mode/xmlcatalog/catalog.xml"/>
-  <nextCatalog catalog="../xslt-util/colors/xmlcatalog/catalog.xml"/>
-  <nextCatalog catalog="../xslt-util/hex/xmlcatalog/catalog.xml"/>
-  <nextCatalog catalog="../xslt-util/resolve-uri/xmlcatalog/catalog.xml"/>
-  <nextCatalog catalog="../xslt-util/lengths/xmlcatalog/catalog.xml"/>
-  <nextCatalog catalog="../xslt-util/functx/xmlcatalog/catalog.xml"/>
+  <nextCatalog catalog="../xproc-util/xmlcatalog/catalog.xml"/>
+  <nextCatalog catalog="../xslt-util/xmlcatalog/catalog.xml"/>
   
 </catalog>
