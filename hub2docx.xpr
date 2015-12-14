@@ -8,7 +8,7 @@
                     <entry>
                         <String>catalogs.v5</String>
                         <String-array>
-                            <String>${pdu}/calabash/resolver/catalog.xml</String>
+                            <String>${pdu}/calabash/xmlcatalog/catalog.xml</String>
                         </String-array>
                     </entry>
                     <entry>
@@ -25,7 +25,7 @@
     </meta>
     <projectTree name="hub2docx.xpr">
         <folder masterFiles="true" name="Master Files">
-            <file name="lib/xsl/hub2docx.xsl"/>
+            <file name="hub2docx-lib/xsl/hub2docx.xsl"/>
         </folder>
     </projectTree>
 </project>
