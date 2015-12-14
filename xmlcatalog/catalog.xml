@@ -2,7 +2,7 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 
   <nextCatalog catalog="../lib/xmlcatalog/catalog.xml"/>
-  <nextCatalog catalog="../docx_modify/xmlcatalog/catalog.xml"/>
+  <nextCatalog catalog="../docx_modify-lib/xmlcatalog/catalog.xml"/>
   <nextCatalog catalog="../docx2hub/xmlcatalog/catalog.xml"/>
   <nextCatalog catalog="../xproc-util/xmlcatalog/catalog.xml"/>
   <nextCatalog catalog="../xslt-util/xmlcatalog/catalog.xml"/>
