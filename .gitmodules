@@ -1,6 +1,6 @@
 [submodule "calabash"]
 	path = calabash
-	url = https://github.com/transpect/calabash-frontend.git
+	url = https://github.com/transpect/calabash-frontend
 [submodule "docx_modify-lib"]
 	path = docx_modify-lib
 	url = https://github.com/transpect/docx_modify-lib.git
