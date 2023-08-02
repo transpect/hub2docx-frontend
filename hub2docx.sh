@@ -9,7 +9,7 @@ HUB="$( readlink -f "$1" )"
 DOCX_TEMPLATE="$( readlink -f "$2" )"
 XPL=$DIR/docx_modify-lib/xpl/docx_modify.xpl
 MODIFY_XPL=$DIR/hub2docx-lib/xpl/hub2docx.xpl
-XSL=$DIR/lib/xsl/hub2docx.xsl
+XSL=$DIR/hub2docx-lib/xsl/hub2docx.xsl
 DEBUG_DIR_URI=debug
 
 if [ -z $HUB ]; then
@@ -46,11 +46,9 @@ if $cygwin; then
   DEBUG_DIR_PARAM="debug-dir-uri=file:/$(cygpath -ma $DEBUG_DIR_URI)"
 fi
 
-echo $HUB
-echo $DOCX_TEMPLATE
-echo $XPL
-echo $XSL
-
-
+echo HUB: $HUB
+echo DOCX_TEMPLATE: $DOCX_TEMPLATE
+echo XPL: $XPL
+echo XSL: $XSL
 
 $DIR/calabash/calabash.sh -i xslt="$XSL" -i xpl="$MODIFY_XPL" -i external-sources="$HUB" "$XPL" file="$DOCX_TEMPLATE" debug=$DEBUG $DEBUG_DIR_PARAM
