@@ -7,8 +7,8 @@ esac
 DIR="$( cd -P "$(dirname $( readlink -f "${BASH_SOURCE[0]}" ))" && pwd )"
 HUB="$( readlink -f "$1" )"
 DOCX_TEMPLATE="$( readlink -f "$2" )"
-XPL=$DIR/docx_modify/xpl/docx_modify.xpl
-MODIFY_XPL=$DIR/lib/xpl/hub2docx.xpl
+XPL=$DIR/docx_modify-lib/xpl/docx_modify.xpl
+MODIFY_XPL=$DIR/hub2docx-lib/xpl/hub2docx.xpl
 XSL=$DIR/lib/xsl/hub2docx.xsl
 DEBUG_DIR_URI=debug
 
